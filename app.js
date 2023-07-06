@@ -22,7 +22,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 const sessionConfig = {
-    secret: 'this is my session',
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
 }
@@ -46,8 +46,8 @@ app.use(flash());
 
 // console.log(process.env.CLIENT_ID);
 passport.use(new GoogleStrategy({
-    clientID: '520280912990-amj1nff6qf4pps4nq6i25pdbunbj358k.apps.googleusercontent.com',
-    clientSecret: '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',
+    clientID: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
     callbackURL: 'https://combinate-productivity.herokuapp.com/auth/google/combinate',
     // callbackURL: 'https://localhost:3000/',
 
@@ -58,8 +58,8 @@ passport.use(new GoogleStrategy({
 }));
 
 // ********** Database Connection **********
-// console.log(process.env.MONGODB_URI);
-mongoose.connect('mongodb+srv://Sneha:axHPgvKYLr7OLewq@cluster0.b1gdgx4.mongodb.net/?retryWrites=true&w=majority').then(() => {
+console.log(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI).then(() => {
     console.log('Database Connection Successful');
 }).catch((err) => {
     console.log(`Error setting up connection to database: ${err}`);
