@@ -1,0 +1,41 @@
+<%- include('layouts/head-layout') %>
+
+<div class="chats-container">
+    <div class="back-style2"></div>
+    <div class="users-pane">
+        <!-- <div class="search">
+            <img src="images/loupe.png" alt="">
+            <h2>Search</h2>
+        </div> -->
+        <div id="chatsList" class="users">
+            
+        </div>
+    </div>
+    <div id="chatContainer" class="chats-pane">
+        <div class="current-name">
+            <div class="pfp-container">
+                <img id="chatIcon" class="pfp hidden">
+            </div>
+            <h1 id="currentChatName" class="current-chat-name"></h1>
+        </div>
+
+        <p id="noMessageContainer" class="no-messages hidden">No messages yet</p>
+        <div class="chats-backdrop"></div>
+        <div id="messageContainer" class="chats">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_zspkgv9g.json"  background="rgba(0, 0, 0, 0)"  speed="1"  style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+        </div>
+        <div class="message-bar">
+            <input id="messageContent" type="text" placeholder="Message..." class="input-bar">
+            <div id="sendMessageBtn" class="send-icon-container">
+                <span class="material-icons material-icons-outlined">
+                    send
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="javascript/common.js"></script>
+<script src="javascript/chatsPage.js"></script>
+<%- include('layouts/foot-layout') %>
