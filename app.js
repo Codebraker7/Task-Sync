@@ -48,7 +48,7 @@ app.use(flash());
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: 'https://combinate-productivity.herokuapp.com/auth/google/combinate',
+    // callbackURL: 'https://combinate-productivity.herokuapp.com/auth/google/combinate',
     // callbackURL: 'https://localhost:3000/',
 
   },

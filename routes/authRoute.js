@@ -10,11 +10,11 @@ const router = express.Router();
 // ********** GET: /auth/google **********
 router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 
-// ********** GET: /auth/google/combinate **********
-router.get('/google/combinate',
-    passport.authenticate('google', {failureRedirect: '/login', failureFlash: true}), (req, res) => {
-    res.redirect('/overview');
-});
+// ********** GET: /auth/google/**********
+// router.get('/google/combinate',
+//     passport.authenticate('google', {failureRedirect: '/login', failureFlash: true}), (req, res) => {
+//     res.redirect('/overview');
+// });
 
 
 // ********* Exporting Modules **********
