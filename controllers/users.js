@@ -39,7 +39,7 @@ const registerUser = async (req, res) => {
                 res.redirect('/login');
             } else {
                 passport.authenticate('local', {failureRedirect: '/login', failureFlash: true});
-                req.flash('success', 'Registered Successfully! Welcome to Combinate');
+                req.flash('success', 'Registered Successfully! Welcome to TaskSync');
                 res.redirect('/overview');
             }
         });

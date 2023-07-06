@@ -1,9 +1,8 @@
-# Combinate
+# TaskSync
 
-<h2 align="center">Welcome to Combinate! 💜</h2>
+<h2 align="center">Welcome to TaskSync! 💜</h2>
 
-A social productivity web application for the ease of management of tasks and calendar events while connecting with people with similar interests.
-
+A personal productivity web application for the ease of management of tasks and calendar events 
 <hr>
 
 ## 📥 Technology:
@@ -39,16 +38,6 @@ A social productivity web application for the ease of management of tasks and ca
 
 <hr>
 
-## 🚩 Starting the application
-• You need to install the dependencies which can be done simply by writing the following command inside the directory: <br>
-`npm install` or simply, `npm i`<br>
-
-• In the directory, you can run:<br>
-`node app.js`<br>
-It runs the application in the development mode
-
-<hr>
-
 ## 📕 About the Application
 
 The application allows users to:
@@ -57,14 +46,9 @@ The application allows users to:
     <li>Create a categorised to-do list and add or remove daily tasks.</li>
     <li>Add individual events to the calendar and get notified about the upcoming deadlines.</li>
     <li>Have a personal profile, update their bio, profile picture and their interests.</li>
-    <li>Search for various users and follow or unfollow them based on their interests.</li>
-    <li>Chat with users in real time, implemented using Socket.IO</li>
     
 </ul>
 
 <hr>
 
-## 🧑🏻‍💻 Team
-
-**Author:** [Kartik Bagri](https://github.com/kartikbagri) \
-**Co-authors:** [Jai Singhal](https://github.com/Jai12396), [Adwita Arora](https://github.com/adwitaarora)
+**Author:** [Sneha Aggarwal](https://github.com/codebraker7)

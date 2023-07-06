@@ -99,16 +99,16 @@ app.use('/todo', middleware.isLoggedIn, todoRoute);
 const aboutRoute = require('./routes/aboutRoute');
 app.use('/about', aboutRoute);
 
-const teamRoute = require('./routes/teamRoute');
-app.use('/team', teamRoute);
+// const teamRoute = require('./routes/teamRoute');
+// app.use('/team', teamRoute);
 
 // Search Route
 const searchRoute = require('./routes/searchRoute');
 app.use('/users', middleware.isLoggedIn, searchRoute);
 
-// Chats Route
-const chatsRoute = require('./routes/chatsRoute');
-app.use('/chats', middleware.isLoggedIn, chatsRoute);
+// // Chats Route
+// const chatsRoute = require('./routes/chatsRoute');
+// app.use('/chats', middleware.isLoggedIn, chatsRoute);
 
 app.get('/logout', (req, res) => {
     req.logout();
@@ -126,11 +126,11 @@ app.use('/api/users', usersApiRoute);
 const tasksApiRoute = require('./routes/api/tasks');
 app.use('/api/tasks', tasksApiRoute);
 
-const chatsApiRoute = require('./routes/api/chats');
-app.use('/api/chats', chatsApiRoute);
+// const chatsApiRoute = require('./routes/api/chats');
+// app.use('/api/chats', chatsApiRoute);
 
-const messagesApiRoute = require('./routes/api/messages');
-app.use('/api/messages', messagesApiRoute);
+// const messagesApiRoute = require('./routes/api/messages');
+// app.use('/api/messages', messagesApiRoute);
 
 // Courses Route
 // const coursesRoute = require('./routes/coursesRoute');
@@ -141,14 +141,14 @@ app.use('/api/messages', messagesApiRoute);
 // app.use('/articles', articlesRoute);
 
 // ********** Server listening on port: 30000 **********
-io.on('connection', (socket) => {
-    socket.on('join-chat-room', (chatId) => {
-        socket.join(chatId);
-    });
-    socket.on('message-received', (data) => {
-        socket.to(data.chatId).emit('message-received', data.message);
-    });
-});
+// io.on('connection', (socket) => {
+//     socket.on('join-chat-room', (chatId) => {
+//         socket.join(chatId);
+//     });
+//     socket.on('message-received', (data) => {
+//         socket.to(data.chatId).emit('message-received', data.message);
+//     });
+// });
 
 console.log(process.env.PORT);
 

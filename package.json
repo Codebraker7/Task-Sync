@@ -1,14 +1,14 @@
 {
-  "name": "combinate",
+  "name": "task-sync",
   "version": "1.0.0",
-  "description": "A social goal setting website",
+  "description": "A personal goal setting website",
   "main": "app.js",
   "scripts": {
     "build": "node app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kartik Bagri",
+  "author": "Sneha Aggarwal",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.22.0",
