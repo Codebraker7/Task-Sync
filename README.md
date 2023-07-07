@@ -50,7 +50,7 @@ The application allows users to:
 </ul>
 
 <img src = "/ss/Homepage.png">
-<img src = "/ss/Homepage-2">
+<img src = "/ss/Homepage-2.png">
 <img src = "/ss/Aboutpage.png">
 <img src = "/ss/Dashboard.png">
 
