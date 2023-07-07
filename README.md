@@ -49,6 +49,9 @@ The application allows users to:
     
 </ul>
 
+<img src = "/ss/Homepage.png">
+<img src = "/ss/Dashboard.png">
+
 <hr>
 
 **Author:** [Sneha Aggarwal](https://github.com/codebraker7)
